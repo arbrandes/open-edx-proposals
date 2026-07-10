@@ -16,7 +16,7 @@ beautifulsoup4==4.15.0
     # via pydata-sphinx-theme
 certifi==2026.6.17
     # via requests
-charset-normalizer==3.4.7
+charset-normalizer==3.4.8
     # via requests
 docutils==0.22.4
     # via
@@ -72,7 +72,7 @@ sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
 sphinxext-rediraffe==0.3.0
     # via -r requirements/base.in
-typing-extensions==4.15.0
+typing-extensions==4.16.0
     # via
     #   beautifulsoup4
     #   pydata-sphinx-theme
