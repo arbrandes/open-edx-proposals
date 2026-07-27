@@ -22,8 +22,14 @@ Open edX commercial providers are addressing this challenge with purpose-made so
 Decision
 ********
 
-We recommend that all large Open edX deployments use the community-maintained Terraform modules and Helm chart described in decision 0002, existing solutions in the Open edX ecosystem (`GitHub Actions`_), provider-maintained open-source tooling (`Drydock`_ and `Picasso`_), and cloud-native, provider-agnostic deployment tools (`ArgoCD`_, and `Argo Workflows`_). We encourage providers to share any additional deployment code/tooling they use as open source repos or templates that other providers can use as a reference. If any particular template such as OpenCraft's `Launchpad`_ becomes adopted by multiple providers, it should be considered for adoption as a community standard, and this OEP should be updated to recommend its use.
+The `Large Instances Working Group`_, mostly consist of the members of commercial providers, maintains the Terraform modules and Helm chart described in decision 0002, as well as the growing ecosystem of related open-source deployment tools.
 
+For operators deploying Open edX on Kubernetes, these resources (`Drydock`_, `Picasso`_, `ArgoCD`_, `Argo Workflows`_ and `GitHub Actions`_) provide flexible reference architectures.
+We recognize that Open edX deployments vary widely in scale and infrastructure. Operators are free to blend these community tools with their own existing stack, and we encourage providers to share new deployment code, modules, or templates with the community.
+
+Because Open edX intentionally supports diverse infrastructure needs, none of these tools are mandatory. Instead, the community focuses its efforts on ensuring these reference implementations and provider templates like OpenCraft's `Launchpad`_, are maintained to serve as reliable blueprints.
+
+.. _Large Instances Working Group: https://openedx.atlassian.net/wiki/spaces/COMM/pages/3655008783/Large+Instances+Working+Group
 .. _GitHub Actions: https://github.com/features/actions
 .. _Drydock: https://github.com/eduNEXT/drydock
 .. _Picasso: https://github.com/eduNEXT/picasso
@@ -34,6 +40,11 @@ We recommend that all large Open edX deployments use the community-maintained Te
 
 Consequences
 ************
+
+Introduction
+============
+
+The following considerations describe the trade-offs and best practices for deployments following the community reference architecture outlined in this decision. They are not requirements for deploying Open edX on Kubernetes, but recommendations for operators who choose to adopt the community-maintained tooling ecosystem.
 
 Build Pipeline Considerations
 =============================
