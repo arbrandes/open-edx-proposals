@@ -16,25 +16,31 @@ The `decision 0002`_ elaborates on the need for community-maintained components 
 
 Open edX commercial providers are addressing this challenge with purpose-made solutions that are mostly not compatible with each other, although they are built using some community-maintained and provided components.
 
-.. _decision 0002: https://docs.openedx.org/projects/openedx-proposals/en/latest/architectural-decisions/oep-0045/decisions/0002-openedx-hosting-infrastructure-on-k8s.html
-
-
-Decision
-********
-
 The `Large Instances Working Group`_, mostly consist of the members of commercial providers, maintains the Terraform modules and Helm chart described in decision 0002, as well as the growing ecosystem of related open-source deployment tools.
 
 For operators deploying Open edX on Kubernetes, these resources (`Drydock`_, `Picasso`_, `ArgoCD`_, `Argo Workflows`_ and `GitHub Actions`_) provide flexible reference architectures.
 We recognize that Open edX deployments vary widely in scale and infrastructure. Operators are free to blend these community tools with their own existing stack, and we encourage providers to share new deployment code, modules, or templates with the community.
 
-Because Open edX intentionally supports diverse infrastructure needs, none of these tools are mandatory. Instead, the community focuses its efforts on ensuring these reference implementations and provider templates like OpenCraft's `Launchpad`_, are maintained to serve as reliable blueprints.
-
+.. _decision 0002: https://docs.openedx.org/projects/openedx-proposals/en/latest/architectural-decisions/oep-0045/decisions/0002-openedx-hosting-infrastructure-on-k8s.html
 .. _Large Instances Working Group: https://openedx.atlassian.net/wiki/spaces/COMM/pages/3655008783/Large+Instances+Working+Group
 .. _GitHub Actions: https://github.com/features/actions
 .. _Drydock: https://github.com/eduNEXT/drydock
 .. _Picasso: https://github.com/eduNEXT/picasso
 .. _ArgoCD: https://argo-cd.readthedocs.io/en/stable/
 .. _Argo Workflows: https://argoproj.github.io/workflows/
+
+
+Decision
+********
+
+The Open edX project will continue to support a flexible deployment model for Kubernetes rather than prescribing a single deployment orchestration strategy.
+
+The community will maintain and recommend reference implementations, including the Terraform modules and Helm chart described in Decision 0002, together with related deployment tooling maintained by the Large Instances Working Group. These reference implementations provide proven starting points for operators while allowing providers to adapt them to their own infrastructure requirements.
+
+Commercial providers and community members are encouraged to contribute deployment modules, templates, and automation back to the shared ecosystem so that the reference implementations continue to evolve with operational best practices, serving the need of the community.
+
+The project does not require operators to adopt any particular orchestration or deployment tool. Instead, community-maintained implementations and provider-specific templates, like OpenCraft's `Launchpad_`, serve as maintained examples rather than mandated solutions.
+
 .. _Launchpad: https://github.com/open-craft/launchpad-cluster-template
 
 
